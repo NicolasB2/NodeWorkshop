@@ -6,13 +6,13 @@
 </template>
 
 <script>
-import userForm from './components/UserForm.vue';
+import userForm from '../components/UserForm.vue';
 import { api } from '../helpers/helpers';
 
 export default {
   name: 'edit',
   components: {
-    'user-form': userForm
+    //'user-form': userForm
   },
   data: function() {
     return {

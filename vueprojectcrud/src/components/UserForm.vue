@@ -4,56 +4,56 @@
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="calendar plus icon"></i>Name
+        Name
       </div>
       <input type="text" placeholder="Enter name" v-model="user.name" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Firstname
+        Firstname
       </div>
       <input type="text" placeholder="Enter firstname" v-model="user.firstname" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Lastname
+        Lastname
       </div>
       <input type="text" placeholder="Enter lastname" v-model="user.lastname" />
     </div>
     
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Username
+        Username
       </div>
       <input type="text" placeholder="Enter username" v-model="user.username" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Identification
+        Identification
       </div>
       <input type="text" placeholder="Enter identification" v-model="user.identification" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Password
+        Password
       </div>
       <input type="text" placeholder="Enter password" v-model="user.password" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Photo
+         Photo
       </div>
       <input type="text" placeholder="Enter the url" v-model="user.photo" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Active
+        Active
       </div>
       <input type="checkbox" v-model="user.active" />
     </div>

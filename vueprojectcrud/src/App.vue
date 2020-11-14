@@ -6,7 +6,7 @@
           <router-link to="/users" exact class="item">
            <i class="tasks icon"></i> Users
           </router-link>
-          <router-link to="/tasks/new" class="item">
+          <router-link to="/users/new" class="item">
             <i class="plus circle icon"></i> New
           </router-link>
       

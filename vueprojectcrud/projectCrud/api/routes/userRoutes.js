@@ -1,14 +1,8 @@
-const userBuilder = require('../controllers/userController');
+var express = require('express');
+var router = express.Router();
+var user_controller = require("../controllers/userController")  
 
-module.exports = app => {
-    app
-      .route('/users')
-      .get(userBuilder.listAllUsers)
-      .post(userBuilder.createUser);
-  
-    app
-      .route('/users/:userId')
-      .get(userBuilder.readUser)
-      .put(userBuilder.updateUser)
-      .delete(userBuilder.deleteUser);
-  };
+router.get("/", user_controller.listAllUsers) 
+router.post("/", user_controller.createUser)  
+
+module.exports = router; 
