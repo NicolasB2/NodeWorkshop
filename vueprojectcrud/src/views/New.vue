@@ -15,9 +15,11 @@ export default {
   },
   methods: {
     createOrUpdate: async function(user) {
-      const res = await api.createuser(user);
-      this.flash('user created', 'success');
-      this.$router.push(`/users/${res._id}`);
+      console.log(user)
+      //const res = 
+      await api.createuser(user);
+      //this.flash('user created', 'success');
+      //this.$router.push(`/users/${res._id}`);
     }
   }
 };

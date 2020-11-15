@@ -25,13 +25,14 @@ export const api = {
   }),
   getusers: handleError(async () => {
     const res = await axios.get(baseURL);
-    console.log(res.data)
     return res.data;
   }),
   deleteuser: handleError(async id => {
     const res = await axios.delete(baseURL + id);
     return res.data;
   }),
+
+  //----------------------------------------------------------
   createuser: handleError(async payload => {
     const res = await axios.post(baseURL, payload);
     return res.data;
