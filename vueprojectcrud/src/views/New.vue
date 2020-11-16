@@ -15,7 +15,6 @@ export default {
   },
   methods: {
     createOrUpdate: async function(user) {
-      console.log(user)
       await api.createuser(user);
       this.flash('user created', 'success');
       this.$router.push(`/users/`);

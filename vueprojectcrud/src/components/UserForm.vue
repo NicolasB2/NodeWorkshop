@@ -1,6 +1,6 @@
 <template>
  <form action="#" @submit.prevent="onSubmit">
-    <p v-if="errorsPresent" class="error">Please fill out both fields!</p>
+    <p v-if="errorsPresent" class="error">{{errorMs}}</p>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
@@ -27,21 +27,21 @@
       <div class="ui label">
         Username
       </div>
-      <input type="text" placeholder="Enter username" v-model="user.username" />
+      <input type="text" placeholder="Enter username" v-model="user.username"/>
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
         Identification
       </div>
-      <input type="text" placeholder="Enter identification" v-model="user.identification" />
+      <input type="number" placeholder="Enter identification" v-model="user.identification" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
         Password
       </div>
-      <input type="text" placeholder="Enter password" v-model="user.password" />
+      <input type="text" placeholder="Enter password" v-model="user.password"/>
     </div>
 
     <div class="ui labeled input fluid">
@@ -59,7 +59,7 @@
     </div>
 
 
-    <button class="positive ui button">Add user</button>
+    <button class="positive ui button">Submit</button>
   </form>
 </template>
 
@@ -86,7 +86,8 @@ export default {
   },
   data() {
     return {
-      errorsPresent: false
+      errorMs: '',
+      errorsPresent: false,
     };
   },
 
@@ -94,6 +95,13 @@ export default {
     onSubmit: function() {
       if (this.user.name === '' || this.user.firstname === '' || this.user.lastname === '' || this.user.username === '' || this.user.identification === '' || this.user.password === '' || this.user.photo === '') {
         this.errorsPresent = true;
+        this.errorMs = "Please fill out all fields!"
+      } else if (this.user.username.length<8) {
+        this.errorsPresent = true;
+        this.errorMs = "Username has to get 8 letters"
+      } else if (this.user.password.length<8) {
+        this.errorsPresent = true;
+        this.errorMs = "Password has to get 8 letters"
       } else {
         this.$emit('createOrUpdate', this.user);
       }
