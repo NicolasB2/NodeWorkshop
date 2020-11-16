@@ -1,7 +1,7 @@
 <template>
   <div>
     <h1>Edit user</h1>
-    <task-form @createOrUpdate="createOrUpdate" :user=this.user></task-form>
+    <user-form @createOrUpdate="createOrUpdate" :user=this.user></user-form>
   </div>
 </template>
 
@@ -12,7 +12,7 @@ import { api } from '../helpers/helpers';
 export default {
   name: 'edit',
   components: {
-    //'user-form': userForm
+    'user-form': userForm
   },
   data: function() {
     return {

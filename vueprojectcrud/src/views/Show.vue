@@ -1,8 +1,6 @@
 <template>
   <div>
     <h1>Show user</h1>
-
-   
     <div class="ui labeled input fluid">
       <div class="ui label">
       <i class="tasks icon"></i> Name
