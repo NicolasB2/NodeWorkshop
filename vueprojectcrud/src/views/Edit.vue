@@ -23,7 +23,7 @@ export default {
     createOrUpdate: async function(user) {
       await api.updateuser(user);
       this.flash('User updated sucessfully!', 'success');
-      this.$router.push(`/users/${user._id}`);
+      this.$router.push(`/users/`);
     }
   },
   async mounted() {

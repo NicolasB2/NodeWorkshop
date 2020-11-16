@@ -14,12 +14,8 @@
       </div>
     </div>
 
-    <div class="ui text container">
-      <div class="ui one column grid">
-        <div class="column">
-          <router-view />
-        </div>
-      </div>
+    <div class="ui container">
+      <router-view />
     </div>
   </div>
 </template>
