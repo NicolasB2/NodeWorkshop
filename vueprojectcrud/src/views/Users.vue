@@ -58,8 +58,9 @@ export default {
       if (!sure) return;
       await api.deleteuser(id);
       this.flash('user deleted sucessfully!', 'success');
+      console.log(id)
       const newUsers = this.users.filter(user => user._id !== id);
-      this.users = newusers;
+      this.users = newUsers;
     }
   },
   async mounted() {
