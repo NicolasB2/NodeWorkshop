@@ -2,12 +2,7 @@
  <form action="#" @submit.prevent="onSubmit">
     <p v-if="errorsPresent" class="error">{{errorMs}}</p>
 
-    <div class="ui labeled input fluid">
-      <div class="ui label">
-        Name
-      </div>
-      <input type="text" placeholder="Enter name" v-model="user.name" />
-    </div>
+    
 
     <div class="ui labeled input fluid">
       <div class="ui label">
@@ -72,7 +67,7 @@ export default {
       required: false,
       default: () => {
         return {
-          name: '',
+          name: 'test',
           firstname: '',
           lastname: '',
           username: '',
@@ -93,7 +88,7 @@ export default {
 
   methods: {
     onSubmit: function() {
-      if (this.user.name === '' || this.user.firstname === '' || this.user.lastname === '' || this.user.username === '' || this.user.identification === '' || this.user.password === '' || this.user.photo === '') {
+      if ( this.user.firstname === '' || this.user.lastname === '' || this.user.username === '' || this.user.identification === '' || this.user.password === '' || this.user.photo === '') {
         this.errorsPresent = true;
         this.errorMs = "Please fill out all fields!"
       } else if (this.user.username.length<8) {

@@ -3,56 +3,56 @@
     <h1>Show user</h1>
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="tasks icon"></i> Name
+       Name
       </div>
       <input type="text" readonly  :value="user.name"/>
     </div>
 
      <div class="ui labeled input fluid">
       <div class="ui label">
-        <i class="info circle icon"></i> Fistname
+       Fistname
       </div>
       <input type="text" readonly  :value="user.firstname"/>
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Lastname
+       Lastname
       </div>
       <input type="text" readonly :value="user.lastname" />
     </div>
     
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Username
+       Username
       </div>
       <input type="text" readonly :value="user.username" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Identification
+       Identification
       </div>
       <input type="text" readonly :value="user.identification" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Password
+       Password
       </div>
       <input type="text" readonly :value="user.password" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Photo
+       Photo
       </div>
       <input type="text" readonly :value="user.photo" />
     </div>
 
     <div class="ui labeled input fluid">
       <div class="ui label">
-      <i class="info circle icon"></i> Active
+       Active
       </div>
       <input type="checkbox" :value="user.active" />
     </div>

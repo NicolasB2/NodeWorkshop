@@ -32,7 +32,6 @@ export const api = {
     return res.data;
   }),
 
-  //----------------------------------------------------------
   createuser: handleError(async payload => {
     const res = await axios.post(baseURL, payload);
     return res.data;

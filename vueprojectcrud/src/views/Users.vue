@@ -4,7 +4,6 @@
     <table id="users" class="ui celled compact table">
       <thead>
         <tr>
-         <th> Name</th>
          <th> Firstname</th>
          <th> Lastname</th>
          <th> Username</th>
@@ -19,7 +18,7 @@
         </tr>
       </thead>
       <tr v-for="(user, i) in users" :key="i">
-        <td>{{ user.name }}</td>
+        
         <td>{{ user.firstname }}</td>
         <td>{{ user.lastname }}</td>
         <td>{{ user.username }}</td>
